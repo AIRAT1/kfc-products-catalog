@@ -16,7 +16,8 @@ public class Main {
     }
 
     private static void initProducts() {
-        Product longer = new Product("https://s82079.cdn.ngenix.net/sRrSzWpf86c4hMMwCJ7aHBph.png?dw=230",
+        Product longer = new Product(0,
+                "https://s82079.cdn.ngenix.net/sRrSzWpf86c4hMMwCJ7aHBph.png?dw=230",
                 50,
                 "Лонгер BBQ",
                 107,
@@ -25,7 +26,8 @@ public class Main {
                 9.7,
                 7.1,
                 33.3);
-        Product cheeseburger = new Product("https://s82079.cdn.ngenix.net/9VW3RQfY33AnJi7Yu38nKiHc.png?dw=230",
+        Product cheeseburger = new Product(1,
+                "https://s82079.cdn.ngenix.net/9VW3RQfY33AnJi7Yu38nKiHc.png?dw=230",
                 69,
                 "Чизбургер",
                 167,

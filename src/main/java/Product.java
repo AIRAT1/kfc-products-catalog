@@ -1,4 +1,5 @@
 public class Product {
+    private int id;
     private String productPictureUrl;
     private int price;
     private String name;
@@ -9,7 +10,8 @@ public class Product {
     private double fatQuantity;
     private double carbohydratesQuantity;
 
-    Product(String productPictureUrl, int price, String name, int weight, String description, int caloriesQuantity, double proteinQuantity, double fatQuantity, double carbohydratesQuantity) {
+    Product(int id, String productPictureUrl, int price, String name, int weight, String description, int caloriesQuantity, double proteinQuantity, double fatQuantity, double carbohydratesQuantity) {
+        this.id = id;
         this.productPictureUrl = productPictureUrl;
         this.price = price;
         this.name = name;
@@ -25,7 +27,8 @@ public class Product {
     public String toString() {
         return name +
                 " " +
-                "{productPictureUrl='" + productPictureUrl + '\'' +
+                "{id= " + id +
+                ", productPictureUrl='" + productPictureUrl + '\'' +
                 ", price=" + price +
                 ", weight=" + weight +
                 ", description='" + description + '\'' +
